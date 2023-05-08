@@ -1,0 +1,69 @@
+/* CONFIGURAÇÃO PADRÃO */
+
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.clear{ /*Classe para limpar flutuações*/
+    clear: both;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+/* HEADER  */
+header{
+    height: 80px;
+    background-color: blue;
+
+}
+
+/* box-captura*/
+section.box-captura{
+    height: 200px;
+    background-color: black;
+}
+
+/* CONTENT */
+.content{
+    padding: 0 12%;
+    height: 300px;
+    background-color: yellow;
+}
+
+div.post{
+    height: 100%;
+    background-color: green;
+    width: 80%;
+}
+
+div.sidebar{
+    height: 100%;
+    background-color: purple;
+    width: 20%;
+}
+
+/* FOOTER  */
+footer{
+    height: 180px;
+    background-color: gray;
+}
