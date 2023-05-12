@@ -3,67 +3,86 @@
 @charset "UTF-8";
 
 *{
+    max-width: 100%;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    padding: 0 auto;
+}
+
+:root{
+    --cor0: #1E1E24;
+    --cor1: #464343;
+    --cor2: #F7EBE8;
+    --cor3: #FFA987;
+    --cor4: #E54B4B;
+    --cor5: #f7ebe8d7;
 }
 
 body{
-    height: 100%;
-
+    background-color: var(--cor4);
+    margin: 0;
+    
 }
 
-.container{
-    max-width: 1280px;
-    margin: 0 auto;
+header.cabeçalho{
+    color: var(--cor2);
+    font-size: 1.3em;
+    padding: 10px;
+    background-color: var(--cor0);
+    background-size: cover;
 }
 
-.clear{ /*Classe para limpar flutuações*/
-    clear: both;
-}
-
-.left{
-    float: left;
-}
-
-.right{
-    float: right;
-}
-
-/* HEADER  */
-header{
-    height: 80px;
-    background-color: blue;
+header > h1{
+    text-align: center;
+    
 
 }
-
-/* box-captura*/
-section.box-captura{
-    height: 200px;
-    background-color: black;
+header > p{
+    text-align: center;
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.432);
 }
 
-/* CONTENT */
-.content{
-    padding: 0 12%;
-    height: 300px;
-    background-color: yellow;
+nav{
+    background-color:var(--cor1) ;
+    text-decoration: none;
+    color: aliceblue;
+    max-width: 100;
+    padding: 10px;
+    text-align: left;
+    ;
+}
+.menu{
+    color: rgba(255, 255, 255, 0.877);
+    position: relative;
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    
+}
+a:hover{
+    background-color: var(--cor2);
+    color: var(--cor4);
+    
 }
 
-div.post{
-    height: 100%;
-    background-color: green;
-    width: 80%;
+section{
+    padding: 10px;
+    margin: 10px;
+}
+section > p{
+    text-align: justify;
+    text-indent: 10px;
 }
 
-div.sidebar{
-    height: 100%;
-    background-color: purple;
-    width: 20%;
+article{
+    background-color: var(--cor5);
+    min-width: 300px;
+    max-width: 100px;
+    padding: 5px;
+    border: 0px 10px;
+    border-radius:  0px 0px 10px 10px;
 }
 
-/* FOOTER  */
-footer{
-    height: 180px;
-    background-color: gray;
+li.text{
+    color: var(--cor4);
 }
